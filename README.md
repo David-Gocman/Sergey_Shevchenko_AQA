@@ -6,6 +6,4 @@ Hello World
 
 after first commit
 
-after second commit 
-
-main
+after second commit in feature4
