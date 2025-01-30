@@ -6,4 +6,6 @@ Hello World
 
 after first commit
 
-after second commit in feature4
+after second commit in feature
+
+Let's make some changes like a part of the HomeWork
