@@ -15,3 +15,6 @@ console.log (c);
 
 let d = 17 % 4;
 console.log (d);
+
+const k = i+b; //const + let
+console.log (k);
