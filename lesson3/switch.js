@@ -14,7 +14,7 @@ const b2 = false;
 switch (c) {
     case (c > 0): {
         console.log('even');
-        break; 
+        break;
     }
     case (c < 0): {
         console.log ('WTF???');
