@@ -12,7 +12,7 @@ Then put eslint.config.mjs and .prettierrc into your base directory
 you can add a script to your package.json
 ```
 "scripts": {
-  "lint": "eslint src/",
+  "lint": "eslint .",
   "build": "npm run lint && <build script>",
 }
 ```
