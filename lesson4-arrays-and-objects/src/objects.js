@@ -1,6 +1,7 @@
 const obj = {
     car: 'Ford',
     model: 'Mustang',
+    max: ['m', 'a', 'x'],
     props: {
         color: 'black',
         year: '1979'
@@ -21,3 +22,5 @@ console.log('-------------------------');
 console.log(Object.entries(obj));
 console.log('-------------------------');
 obj.func();
+console.log('-------------------------');
+console.log(Object.values(obj));
