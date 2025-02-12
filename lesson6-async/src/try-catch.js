@@ -1,9 +1,9 @@
-// class MyOwnError extends Error {
-//     constructor(message) {
-//         super(message);
-//         this.name = "MyTestOwnError";
-//     }
-// }
+class MyOwnError extends Error {
+    constructor(message) {
+        super(message);
+        this.name = "MyOwnError";
+    }
+}
 
 async function fetchData() {
     try {
@@ -13,7 +13,7 @@ async function fetchData() {
         }
         const data = await response.json();
         console.log('received data from 1:', data);
-    } catch {
+    } catch (error) {
 
         try {
             const response = await fetch('https://pig_fact.ninja/docs/api-docs.json');
@@ -24,12 +24,12 @@ async function fetchData() {
 
             const data = await response.json();
             console.log('received data from 2:', data);
-        } catch {
-            throw new Error('Both resources are bad');
+        } catch(error) {
+            throw new MyOwnError('Both resources are bad');
         }
     }
 }
 
 fetchData().catch((error) => {
-    console.log('MyOwnError:', error.message);
+    console.log('My_Test_Error:', error.message);
 });
