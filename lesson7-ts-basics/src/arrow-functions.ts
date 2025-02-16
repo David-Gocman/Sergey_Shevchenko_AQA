@@ -1,12 +1,12 @@
-const arrNumber1: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const arrMax1: string[] = ['m ', 'a ', 'x '];
+const arrNumber1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const arrMax1  = ['m ', 'a ', 'x '];
 let sum: string | number;
 
-const sumArray1 = function (arr: any): void {
+const sumArray1 = function (arr: number[] | string[]): void {
     if (typeof arr[0] === 'number') {
-        sum = (arr.reduce((a: number, b: string) => a + b, 0));
+        sum = (arr as number[]).reduce ((a, b) => a + b, 0);
     } else {
-        sum = (arr.reduce((a: string, b: number) => a + b, ''));
+        sum = (arr as string[]).reduce ((a, b) => a + b, '');
     };
     console.log(sum);
 };
